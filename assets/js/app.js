@@ -1,4 +1,6 @@
 console.log("JavaScript is loaded");
+//
+//
 
 // properties (the data) of a ball
 let colour = "orange";
