@@ -9,3 +9,4 @@ let xVelocity = 5; // the speed of a ball on the x-axis
 let yVelocity = 6; // the speed of a ball on the y-axis
 
 createNewBall(radius, colour, xVelocity, yVelocity);
+createNewBall(12, 'blue', 3, 2);
