@@ -11,11 +11,26 @@ function setup(){
      
       
 }
-function myFunction() {
+ canvas.addEventListener('mousedown', newBall);
+
+// function logKey(e) {
+//   var rect = canvas.getBoundingClientRect();
+//     console.log(e.clientX,e.clientY)
+// console.log(e.clientX-rect.left)
+// console.log(e.clientY - rect.top)
+    
+//         // return {
+//         //   x: evt.clientX - rect.left,
+//         //   y: evt.clientY - rect.top
+//         // };
+// }
+function newBall(e) {
+    var rect = canvas.getBoundingClientRect();
   //canvas.click();
+  //console.log(e.clientX,e.clientY)
   let ranXspeed=Math.floor((Math.random()+0.01) * 5)
   let ranYspeed=Math.floor((Math.random()+0.01) * 6)
-  balls.push(new Ball(10,10,ranXspeed,ranYspeed,10,"blue"))
+  balls.push(new Ball(e.clientX-rect.left,e.clientY - rect.top,ranXspeed,ranYspeed,10,"blue"))
 }
 
 function draw(){
