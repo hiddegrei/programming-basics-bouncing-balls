@@ -1,5 +1,5 @@
-function rect(x,y,r){
-    ctx.fillStyle = "blue";
+function rect(x,y,r,color){
+    ctx.fillStyle = color;
     ctx.beginPath();
     ctx.arc(
       x,

@@ -1,12 +1,13 @@
 
 
 class Ball {
-  constructor(x,y,xspeed,yspeed,r) {
+  constructor(x,y,xspeed,yspeed,r,color) {
     this.x = x;
     this.y=y;
     this.xspeed=xspeed;
     this.yspeed=yspeed;
     this.r=r;
+     this.color=color;
   }
   move(){
       this.x=this.x+this.xspeed;
@@ -14,7 +15,7 @@ class Ball {
   }
   display(){
      
-      rect(this.x,this.y,this.r)
+      rect(this.x,this.y,this.r,this.color)
   }
   turn(){
       if(this.x+this.r>canvas.width){
